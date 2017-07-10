@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="gitHubViewer">
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts//angular.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/MainController.js"></script>
+</head>
+
+<body>
+    <h1>Github Viewer</h1>
+    
+    <div>
+
+        {{countdown}}
+
+        <form name="searchUser">
+            <input type="search" placeholder="Username to find" ng-model="username" />
+            <input type="submit" value="Search" ng-click="search(username)">
+        </form>
+
+        <div ng-include="'userDetails.html'" ng-show="user">
+        </div>
+
+    </div>
+
+</body> 
+
+
+</html>
