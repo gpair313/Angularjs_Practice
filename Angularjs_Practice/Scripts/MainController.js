@@ -25,7 +25,6 @@
             if ($scope.countdown < 1) {
                 $scope.search($scope.username);
             }
-            //if($)
         };
 
         var startCountdown = function () {
